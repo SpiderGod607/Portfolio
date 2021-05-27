@@ -4,13 +4,13 @@ import ProjectCard from "./ProjectCards";
 import BlogCard from "./BlogsCards";
 import Particle from "../Particle";
 
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.jpeg";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import algo from "../../Assets/Projects/algo.png";
-import plant from "../../Assets/Projects/plant.jpeg";
+
+import chatify from "../../Assets/Projects/wallpaperheaven.png";
+import vyapar from "../../Assets/Projects/vyapar.png";
+import sudokusolver from "../../Assets/Projects/sudokusolver.png";
+import nytimes from "../../Assets/Projects/nytimes.jpg";
+import hinge from "../../Assets/Projects/hinge.jfif";
+import nykaa from "../../Assets/Projects/nykaa.png";
 
 function Projects() {
   return (
@@ -28,75 +28,63 @@ function Projects() {
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              link="https://github.com/soumyajit4419/Chatify"
+              title="Wallpaper Heaven"
+              description="WallpaperHeaven is a wallpaper app which is build using jetpack compose and uses wallhaven.cc api."
+              link="https://github.com/SpiderGod607/WallpaperHeaven"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={vyapar}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              link="https://github.com/soumyajit4419/Plant_AI"
+              title="Vyapar Clone"
+              description="This is an android project which follows MVVM architecture. It uses the new kid in town Jetpack Compose for some of the UI and also uses Hilt for dependency injection. All the data in the app is managed using Room. The app allows business owners to manage their inventory."
+              link="https://github.com/chaithanyagollapalli/vyapar"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={sudokusolver}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              link="https://github.com/soumyajit4419/Editor.io"
+              title="Sudoku Solver"
+              description="This app follows MVVM Architecture. The app allows you to solve any valid sudoku problem in less than a second. The app uses a custom view to show the board and the board is solved using a backtracking algorithm. "
+              link="https://github.com/SpiderGod607/SudokuSolver"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={nytimes}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              link="https://github.com/soumyajit4419/AI_For_Social_Good"
+              title="NYTimes clone"
+              description="This app is a clone of Nytimes it follows MVVM architecture and the caching in the app is done using room database, it is a collaborative project and I was responsible for search function with pagination, home screen, share card, article view, bookmark and caching."
+              link="https://github.com/SpartanHarshad/NYTimes-App"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={hinge}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              link="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              title="Hinge clone"
+              description="This app is a clone of hinge UI element."
+              link="https://github.com/diya31656/Hinge"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={nykaa}
+              isBlog={false}
+              title="Nykaa clone"
+              description="This app is a clone of Nykaa fashion the app showcases nested recycler view with multiple views and the data is retrieved by downloading the Nykaa fashion website and extracting JSON code from it."
+              link="https://github.com/soubiakulsum/Nykaa"
             />
           </Col>
         </Row>
-        <h1 className="project-heading">
-          My Recent <strong className="purple">Blog </strong> Posts
-        </h1>
-        <p style={{ color: "white" }}>Do give a read to some of my blogs</p>
-        <Row style={{ justifyContent: "center" }}>
-          <Col md={4} className="blog-card">
-            <BlogCard
-              imgPath={algo}
-              link=""
-              title="Cracking Interview"
-              site="gitbook.com"
-            />
-          </Col>
-          <Col md={4} className="blog-card">
-            <BlogCard
-              imgPath={plant}
-              link="https://medium.com/jovianml/plant-ai-c8fc95ed90e6"
-              title="Plant AI"
-              site="medium.com"
-            />
-          </Col>
-        </Row>
+         
       </Container>
     </Container>
   );
