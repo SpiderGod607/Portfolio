@@ -19,7 +19,7 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-            I am an android developer I am based in Kerala, India. I fell in love with programming and android development during my internship at Infidata.
+            I am an android developer I am based in Kerala, India. I have fell in love with programming and android development.
               <br />
               <br />I am fluent in
               <i>
