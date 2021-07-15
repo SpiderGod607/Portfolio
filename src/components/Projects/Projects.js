@@ -11,6 +11,7 @@ import sudokusolver from "../../Assets/Projects/sudokusolver.png";
 import nytimes from "../../Assets/Projects/nytimes.jpg";
 import hinge from "../../Assets/Projects/hinge.jfif";
 import nykaa from "../../Assets/Projects/nykaa.png";
+import bookparking from "../../Assets/Projects/bookparking.png";
 
 function Projects() {
   return (
@@ -83,6 +84,17 @@ function Projects() {
               link="https://github.com/soubiakulsum/Nykaa"
             />
           </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={bookparking}
+              isBlog={false}
+              title="Book Parking"
+              description="Book Parking is a demo application based on MVVM architecture. The app allows users to booking parking slots, the app uses firebase for the backend."
+              link="https://github.com/nero002/Smart-Parking"
+            />
+          </Col>
+
         </Row>
          
       </Container>

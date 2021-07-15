@@ -13,7 +13,9 @@ import {
 
 import {
   SiKotlin,
-  SiSpring
+  SiSpring,
+  SiFlutter,
+  
  
 } from "react-icons/si";
 
@@ -40,6 +42,14 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
       </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+        <SiFlutter />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiFirebase />
+      </Col>
+
     </Row>
   );
 }
